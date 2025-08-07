@@ -26,7 +26,7 @@ define( 'DB_NAME', 'booking' );
 define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'admin' );
+define( 'DB_PASSWORD', '' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
@@ -57,6 +57,11 @@ define( 'SECURE_AUTH_SALT', '`w#i]y9o7yeIQ:bM_t=EW.S8,Wuu!uJwQ.K7`M8.8ro>_@Z Bsi
 define( 'LOGGED_IN_SALT',   'lWV-&BN74Mjs9)S9a5>aZ+QbDPai)44;qN|Ye~<M#0nB&W,Gw~|gja2Ls}C5{^7$' );
 define( 'NONCE_SALT',       '><ZY!L+ApZzdcf7B3?Bo<7myOOtgPmnQ77_oDe47J(jP[v94P@p>l]7:ZuKjnHkf' );
 
+define('WP_HOME', 'http://haircut-booking.test');
+define('WP_SITEURL', 'http://haircut-booking.test');
+
+define('FS_METHOD', 'direct');
+
 /**#@-*/
 
 /**
@@ -85,7 +90,9 @@ $table_prefix = 'wp_';
  *
  * @link https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/
  */
-define( 'WP_DEBUG', false );
+define('WP_DEBUG', true);
+define('WP_DEBUG_LOG', true);
+define('WP_DEBUG_DISPLAY', false);
 
 /* Add any custom values between this line and the "stop editing" line. */
 
