@@ -49,13 +49,13 @@ if (!defined('WPINC')) {
 
 		<div class="form-row">
 			<div class="form-group">
-				<label for="appointment_date"><?php _e('Date', 'booking'); ?></label>
-				<input type="text" id="appointment_date" name="appointment_date" class="datepicker" required>
+				<label for="booking_date"><?php _e('Date', 'booking'); ?></label>
+				<input type="text" id="booking_date" name="booking_date" class="datepicker" required>
 			</div>
 
 			<div class="form-group">
-				<label for="appointment_time"><?php _e('Time', 'booking'); ?></label>
-				<select id="appointment_time" name="appointment_time" required disabled>
+				<label for="booking_time"><?php _e('Time', 'booking'); ?></label>
+				<select id="booking_time" name="booking_time" required disabled>
 					<option value=""><?php _e('Select date first', 'booking'); ?></option>
 				</select>
 			</div>
@@ -131,8 +131,8 @@ if (!defined('WPINC')) {
         function updateSummary() {
             var service = $('#service_id option:selected');
             var employee = $('#employee_id option:selected');
-            var date = $('#appointment_date').val();
-            var time = $('#appointment_time').val();
+            var date = $('#booking_date').val();
+            var time = $('#booking_time').val();
 
             $('.summary-value.service-name').text(service.text() || '-');
             $('.summary-value.employee-name').text(employee.text() || '-');
@@ -141,11 +141,11 @@ if (!defined('WPINC')) {
         }
 
         // Form field change events
-        $('#service_id, #employee_id, #appointment_date, #appointment_time').on('change', function() {
+        $('#service_id, #employee_id, #booking_date, #booking_time').on('change', function() {
             updateSummary();
 
             // If date and employee are selected, get available times
-            if ($('#appointment_date').val() && $('#employee_id').val() && $('#service_id').val()) {
+            if ($('#booking_date').val() && $('#employee_id').val() && $('#service_id').val()) {
                 getAvailableTimes();
             }
         });
@@ -159,16 +159,16 @@ if (!defined('WPINC')) {
                     action: 'get_available_times',
                     nonce: booking_public_ajax.nonce,
                     employee_id: $('#employee_id').val(),
-                    date: $('#appointment_date').val(),
+                    date: $('#booking_date').val(),
                     service_id: $('#service_id').val()
                 },
                 beforeSend: function() {
-                    $('#appointment_time').prop('disabled', true);
-                    $('#appointment_time').html('<option value=""><?php _e('Loading...', 'booking'); ?></option>');
+                    $('#booking_time').prop('disabled', true);
+                    $('#booking_time').html('<option value=""><?php _e('Loading...', 'booking'); ?></option>');
                 },
                 success: function(response) {
                     if (response.success) {
-                        $('#appointment_time').prop('disabled', false);
+                        $('#booking_time').prop('disabled', false);
 
                         var options = '<option value=""><?php _e('Select a time', 'booking'); ?></option>';
 
@@ -180,12 +180,12 @@ if (!defined('WPINC')) {
                             options = '<option value=""><?php _e('No available times', 'booking'); ?></option>';
                         }
 
-                        $('#appointment_time').html(options);
+                        $('#booking_time').html(options);
                     }
                 },
                 error: function() {
-                    $('#appointment_time').prop('disabled', true);
-                    $('#appointment_time').html('<option value=""><?php _e('Error loading times', 'booking'); ?></option>');
+                    $('#booking_time').prop('disabled', true);
+                    $('#booking_time').html('<option value=""><?php _e('Error loading times', 'booking'); ?></option>');
                 }
             });
         }

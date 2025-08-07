@@ -460,8 +460,8 @@
                                 html += '<tr data-customer-id="' + booking.customer_id + '" data-customer-email="' + booking.customer_email + '" data-customer-phone="' + booking.customer_phone + '" data-service-id="' + booking.service_id + '" data-employee-id="' + booking.employee_id + '" data-status="' + booking.status + '" data-notes="' + (booking.notes || '') + '">';
                                 html += '<td>' + booking.customer_name + '</td>';
                                 html += '<td>' + booking.service_name + '</td>';
-                                html += '<td>' + booking.appointment_date + '</td>';
-                                html += '<td>' + booking.appointment_time + '</td>';
+                                html += '<td>' + booking.booking_date + '</td>';
+                                html += '<td>' + booking.booking_time + '</td>';
                                 html += '<td><span class="booking-status booking-status-' + booking.status + '">' + booking.status + '</span></td>';
                                 html += '<td>$' + booking.cost + '</td>';
                                 html += '<td>';

@@ -37,8 +37,8 @@ if (!defined('WPINC')) {
 				<tr>
 					<td><?php echo esc_html($booking['service_name']); ?></td>
 					<td><?php echo esc_html($booking['employee_name']); ?></td>
-					<td><?php echo esc_html($booking['appointment_date']); ?></td>
-					<td><?php echo esc_html($booking['appointment_time']); ?></td>
+					<td><?php echo esc_html($booking['booking_date']); ?></td>
+					<td><?php echo esc_html($booking['booking_time']); ?></td>
 					<td>
                             <span class="booking-status booking-status-<?php echo esc_attr($booking['status']); ?>">
                                 <?php echo esc_html(ucfirst($booking['status'])); ?>

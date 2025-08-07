@@ -1,8 +1,7 @@
 <?php
 /**
- * Template Name: Booking Page
- *
- * This template is used for the booking page.
+ * Template Name: Booking Form
+ * Description: Template for the booking form
  */
 
 get_header();

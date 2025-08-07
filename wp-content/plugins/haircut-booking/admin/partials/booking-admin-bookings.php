@@ -31,7 +31,7 @@ if (!defined('ABSPATH')) {
 
 			// Check if table exists before querying
 			if($wpdb->get_var("SHOW TABLES LIKE '$bookings_table'") == $bookings_table) {
-				$bookings = $wpdb->get_results("SELECT * FROM $bookings_table ORDER BY appointment_date DESC");
+				$bookings = $wpdb->get_results("SELECT * FROM $bookings_table ORDER BY booking_date DESC");
 
 				if($bookings) {
 					// Display bookings table
@@ -55,7 +55,7 @@ if (!defined('ABSPATH')) {
 								<td><?php echo esc_html($booking->customer_id); ?></td>
 								<td><?php echo esc_html($booking->service_id); ?></td>
 								<td><?php echo esc_html($booking->employee_id); ?></td>
-								<td><?php echo esc_html($booking->appointment_date); ?></td>
+								<td><?php echo esc_html($booking->booking_time); ?></td>
 								<td><?php echo esc_html($booking->status); ?></td>
 								<td>
 									<a href="#" class="button action">Edit</a>

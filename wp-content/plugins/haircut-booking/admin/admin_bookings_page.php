@@ -142,13 +142,13 @@ if (!defined('WPINC')) {
 
 				<div class="form-row">
 					<div class="form-group">
-						<label for="appointment_date">Date</label>
-						<input type="text" id="appointment_date" name="appointment_date" class="datepicker" required>
+						<label for="booking_date">Date</label>
+						<input type="text" id="booking_date" name="booking_date" class="datepicker" required>
 					</div>
 
 					<div class="form-group">
-						<label for="appointment_time">Time</label>
-						<input type="time" id="appointment_time" name="appointment_time" required>
+						<label for="booking_time">Time</label>
+						<input type="time" id="booking_time" name="booking_time" required>
 					</div>
 				</div>
 
@@ -236,12 +236,12 @@ if (!defined('WPINC')) {
 				<div class="form-row">
 					<div class="form-group">
 						<label for="edit-appointment-date">Date</label>
-						<input type="text" id="edit-appointment-date" name="appointment_date" class="datepicker" required>
+						<input type="text" id="edit-appointment-date" name="booking_date" class="datepicker" required>
 					</div>
 
 					<div class="form-group">
 						<label for="edit-appointment-time">Time</label>
-						<input type="time" id="edit-appointment-time" name="appointment_time" required>
+						<input type="time" id="edit-appointment-time" name="booking_time" required>
 					</div>
 				</div>
 

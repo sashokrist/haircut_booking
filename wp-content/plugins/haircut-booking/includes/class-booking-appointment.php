@@ -32,7 +32,7 @@ class Booking_Appointment {
 			'customer_id' => '',
 			'service_id' => '',
 			'employee_id' => '',
-			'order_by' => 'appointment_date',
+			'order_by' => 'booking_date',
 			'order' => 'ASC',
 		);
 
@@ -51,12 +51,12 @@ class Booking_Appointment {
 		$prepare_args = array();
 
 		if (!empty($args['date_from'])) {
-			$query .= " AND b.appointment_date >= %s";
+			$query .= " AND b.booking_date >= %s";
 			$prepare_args[] = $args['date_from'];
 		}
 
 		if (!empty($args['date_to'])) {
-			$query .= " AND b.appointment_date <= %s";
+			$query .= " AND b.booking_date <= %s";
 			$prepare_args[] = $args['date_to'];
 		}
 
@@ -160,7 +160,7 @@ class Booking_Appointment {
             FROM $bookings_table b
             JOIN $services_table s ON b.service_id = s.id
             WHERE b.employee_id = %d
-            AND b.appointment_date = %s
+            AND b.booking_date = %s
             AND b.id != %d",
 			$employee_id,
 			$date,
@@ -171,7 +171,7 @@ class Booking_Appointment {
 
 		foreach ($bookings as $booking) {
 			// Convert booking time to minutes
-			list($booking_hours, $booking_minutes) = explode(':', $booking['appointment_time']);
+			list($booking_hours, $booking_minutes) = explode(':', $booking['booking_time']);
 			$booking_time_in_minutes = ($booking_hours * 60) + $booking_minutes;
 
 			// Booking end time
@@ -237,8 +237,8 @@ class Booking_Appointment {
 		// Check if the time slot is available
 		if (!self::is_time_slot_available(
 			$booking_data['employee_id'],
-			$booking_data['appointment_date'],
-			$booking_data['appointment_time'],
+			$booking_data['booking_date'],
+			$booking_data['booking_time'],
 			$booking_data['service_id']
 		)) {
 			return false;
@@ -250,8 +250,8 @@ class Booking_Appointment {
 				'customer_id' => intval($booking_data['customer_id']),
 				'service_id' => intval($booking_data['service_id']),
 				'employee_id' => intval($booking_data['employee_id']),
-				'appointment_date' => sanitize_text_field($booking_data['appointment_date']),
-				'appointment_time' => sanitize_text_field($booking_data['appointment_time']),
+				'booking_date' => sanitize_text_field($booking_data['booking_date']),
+				'booking_time' => sanitize_text_field($booking_data['booking_time']),
 				'status' => sanitize_text_field($booking_data['status']),
 				'notes' => sanitize_textarea_field($booking_data['notes']),
 				'cost' => floatval($booking_data['cost']),
@@ -276,8 +276,8 @@ class Booking_Appointment {
 		// Check if the time slot is available
 		if (!self::is_time_slot_available(
 			$booking_data['employee_id'],
-			$booking_data['appointment_date'],
-			$booking_data['appointment_time'],
+			$booking_data['booking_date'],
+			$booking_data['booking_time'],
 			$booking_data['service_id'],
 			$id
 		)) {
@@ -290,8 +290,8 @@ class Booking_Appointment {
 				'customer_id' => intval($booking_data['customer_id']),
 				'service_id' => intval($booking_data['service_id']),
 				'employee_id' => intval($booking_data['employee_id']),
-				'appointment_date' => sanitize_text_field($booking_data['appointment_date']),
-				'appointment_time' => sanitize_text_field($booking_data['appointment_time']),
+				'booking_date' => sanitize_text_field($booking_data['booking_date']),
+				'booking_time' => sanitize_text_field($booking_data['booking_time']),
 				'status' => sanitize_text_field($booking_data['status']),
 				'notes' => sanitize_textarea_field($booking_data['notes']),
 				'cost' => floatval($booking_data['cost']),
