@@ -11,6 +11,48 @@
 
 class Booking_Customer {
 
+	// Create a new customer
+	public static function create($data) {
+		global $wpdb;
+		$table_name = $wpdb->prefix . 'booking_customers';
+
+		// Log the attempt to create a customer
+		error_log('Attempting to insert customer into table: ' . $table_name);
+		error_log('Data: ' . print_r($data, true));
+
+		// Set the created_at date if not provided
+		if (!isset($data['created_at'])) {
+			$data['created_at'] = current_time('mysql');
+		}
+
+		// Insert the customer data
+		$result = $wpdb->insert(
+			$table_name,
+			$data
+		);
+
+		// Log the result
+		error_log('Create customer result: ' . ($result ? 'true' : 'false'));
+
+		if ($result) {
+			return $wpdb->insert_id;
+		}
+
+		return false;
+	}
+
+	/**
+	 * Get all customers
+	 *
+	 * @return array Array of customer objects
+	 */
+	public static function get_all() {
+		global $wpdb;
+		$table_name = $wpdb->prefix . 'booking_customers';
+
+		return $wpdb->get_results("SELECT * FROM $table_name ORDER BY name ASC");
+	}
+
 	/**
 	 * Get all customers
 	 *

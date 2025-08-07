@@ -58,6 +58,8 @@ class Booking_Activator {
             name varchar(100) NOT NULL,
             email varchar(100) NOT NULL,
             phone varchar(20),
+            address text,
+            notes text,
             created_at datetime DEFAULT CURRENT_TIMESTAMP,
             PRIMARY KEY  (id)
         ) $charset_collate;";
@@ -69,12 +71,11 @@ class Booking_Activator {
             customer_id mediumint(9) NOT NULL,
             service_id mediumint(9) NOT NULL,
             employee_id mediumint(9) NOT NULL,
-            appointment_date date NOT NULL,
-            appointment_time time NOT NULL,
+            booking_date date NOT NULL,
+            booking_time time NOT NULL,
             status varchar(20) DEFAULT 'pending',
             notes text,
-            cost decimal(10,2) NOT NULL,
-            created_at datetime DEFAULT CURRENT_TIMESTAMP,
+            created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL,
             PRIMARY KEY  (id)
         ) $charset_collate;";
 

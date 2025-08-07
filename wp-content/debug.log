@@ -255,3 +255,36 @@ Stack trace:
     [created_at] => 2025-08-07 09:36:57
 )
 
+[07-Aug-2025 10:39:09 UTC] Automatic updates starting...
+[07-Aug-2025 10:39:09 UTC]   Automatic plugin updates starting...
+[07-Aug-2025 10:39:09 UTC]   Automatic plugin updates complete.
+[07-Aug-2025 10:39:10 UTC] Automatic updates complete.
+[07-Aug-2025 11:05:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Booking_Customer::get_all() in C:\wamp64\www\booking\wp-content\plugins\haircut-booking\admin\partials\booking-admin-customers.php:93
+Stack trace:
+#0 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\admin\class-booking-admin.php(357): include_once()
+#1 C:\wamp64\www\booking\wp-includes\class-wp-hook.php(324): Booking_Admin->display_customers_page('')
+#2 C:\wamp64\www\booking\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\booking\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\booking\wp-admin\admin.php(260): do_action('salon-booking_p...')
+#5 {main}
+  thrown in C:\wamp64\www\booking\wp-content\plugins\haircut-booking\admin\partials\booking-admin-customers.php on line 93
+[07-Aug-2025 11:06:13 UTC] Attempting to insert customer into table: wp_booking_customers
+[07-Aug-2025 11:06:13 UTC] Data: Array
+(
+    [name] => Aleksander Keremidarov
+    [email] => alexander.krist@gmail.com
+    [phone] => 0877750552
+    [address] => MArin Drinov 30
+    [notes] => gfgfgffgf
+)
+
+[07-Aug-2025 11:06:13 UTC] Create customer result: true
+[07-Aug-2025 11:06:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Booking_Customer::get_all() in C:\wamp64\www\booking\wp-content\plugins\haircut-booking\admin\partials\booking-admin-customers.php:93
+Stack trace:
+#0 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\admin\class-booking-admin.php(357): include_once()
+#1 C:\wamp64\www\booking\wp-includes\class-wp-hook.php(324): Booking_Admin->display_customers_page('')
+#2 C:\wamp64\www\booking\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\booking\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\booking\wp-admin\admin.php(260): do_action('salon-booking_p...')
+#5 {main}
+  thrown in C:\wamp64\www\booking\wp-content\plugins\haircut-booking\admin\partials\booking-admin-customers.php on line 93

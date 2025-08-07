@@ -287,6 +287,73 @@ class Booking_Admin {
 	 * @since    1.0.0
 	 */
 	public function display_customers_page() {
+		if (isset($_POST['submit_customer'])) {
+			// Validate input
+			$name = sanitize_text_field($_POST['name']);
+			$email = sanitize_email($_POST['email']);
+			$phone = sanitize_text_field($_POST['phone']);
+			$address = sanitize_textarea_field($_POST['address']);
+			$notes = sanitize_textarea_field($_POST['notes']);
+
+			// Check if editing existing customer
+			if (isset($_POST['customer_id']) && !empty($_POST['customer_id'])) {
+				$customer_id = intval($_POST['customer_id']);
+
+				// Update existing customer
+				$result = Booking_Customer::update($customer_id, [
+					'name' => $name,
+					'email' => $email,
+					'phone' => $phone,
+					'address' => $address,
+					'notes' => $notes
+				]);
+
+				if ($result !== false) {
+					echo '<div class="notice notice-success is-dismissible"><p>Customer updated successfully!</p></div>';
+				} else {
+					echo '<div class="notice notice-error is-dismissible"><p>Failed to update customer. Please try again.</p></div>';
+				}
+			} else {
+				// Create new customer
+				$result = Booking_Customer::create([
+					'name' => $name,
+					'email' => $email,
+					'phone' => $phone,
+					'address' => $address,
+					'notes' => $notes
+				]);
+
+				if ($result) {
+					echo '<div class="notice notice-success is-dismissible"><p>Customer added successfully!</p></div>';
+				} else {
+					echo '<div class="notice notice-error is-dismissible"><p>Failed to add customer. Please try again.</p></div>';
+				}
+			}
+		}
+
+// Handle delete action
+		if (isset($_GET['action']) && $_GET['action'] == 'delete' && isset($_GET['id'])) {
+			$customer_id = intval($_GET['id']);
+			$result = Booking_Customer::delete($customer_id);
+
+			if ($result) {
+				echo '<div class="notice notice-success is-dismissible"><p>Customer deleted successfully!</p></div>';
+			} else {
+				echo '<div class="notice notice-error is-dismissible"><p>Failed to delete customer.</p></div>';
+			}
+		}
+
+// Get customer to edit if in edit mode
+		$editing = false;
+		$customer = null;
+		if (isset($_GET['action']) && $_GET['action'] == 'edit' && isset($_GET['id'])) {
+			$customer_id = intval($_GET['id']);
+			$customer = Booking_Customer::get_by_id($customer_id);
+			if ($customer) {
+				$editing = true;
+			}
+		}
+
 		include_once BOOKING_PLUGIN_PATH . 'admin/partials/booking-admin-customers.php';
 	}
 
