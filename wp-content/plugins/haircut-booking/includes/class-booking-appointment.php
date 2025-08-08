@@ -284,7 +284,7 @@ class Booking_Appointment {
 			return false;
 		}
 
-		return $wpdb->update(
+		$result = $wpdb->update(
 			$table_name,
 			array(
 				'customer_id' => intval($booking_data['customer_id']),
@@ -298,6 +298,13 @@ class Booking_Appointment {
 			),
 			array('id' => $id)
 		);
+
+// For debugging issues
+		if ($result === false) {
+			error_log('Booking update failed. Error: ' . $wpdb->last_error);
+		}
+
+		return $result;
 	}
 
 	/**

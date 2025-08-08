@@ -73,7 +73,7 @@ class Booking_Customer {
 	 * @param    int    $id    Customer ID
 	 * @return   array    Customer data
 	 */
-	public static function get_customer($id) {
+	public static function get_by_id($id) {
 		global $wpdb;
 		$table_name = $wpdb->prefix . 'booking_customers';
 

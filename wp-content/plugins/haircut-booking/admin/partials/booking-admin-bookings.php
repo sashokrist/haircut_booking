@@ -27,7 +27,7 @@ if (!defined('ABSPATH')) {
 			<?php
 			// Your code to display bookings
 			global $wpdb;
-			$bookings_table = $wpdb->prefix . 'booking_appointments';
+			$bookings_table = $wpdb->prefix . 'bookings';
 
 			// Check if table exists before querying
 			if($wpdb->get_var("SHOW TABLES LIKE '$bookings_table'") == $bookings_table) {
