@@ -59,12 +59,12 @@ class Booking_Customer {
 	 * @since    1.0.0
 	 * @return   array    Array of customers
 	 */
-	public static function get_customers() {
-		global $wpdb;
-		$table_name = $wpdb->prefix . 'booking_customers';
-
-		return $wpdb->get_results("SELECT * FROM $table_name ORDER BY name ASC", ARRAY_A);
-	}
+//	public static function get_customers() {
+//		global $wpdb;
+//		$table_name = $wpdb->prefix . 'booking_customers';
+//
+//		return $wpdb->get_results("SELECT * FROM $table_name ORDER BY name ASC", ARRAY_A);
+//	}
 
 	/**
 	 * Get a single customer by ID
@@ -123,6 +123,8 @@ class Booking_Customer {
 				'name' => sanitize_text_field($customer_data['name']),
 				'email' => sanitize_email($customer_data['email']),
 				'phone' => sanitize_text_field($customer_data['phone']),
+				'address' => sanitize_text_field($customer_data['address']),
+				'notes' => sanitize_text_field($customer_data['notes']),
 			)
 		);
 

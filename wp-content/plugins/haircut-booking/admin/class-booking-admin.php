@@ -138,6 +138,34 @@ class Booking_Admin {
 	 * @since    1.0.0
 	 */
 	public function display_bookings_page() {
+		global $wpdb;
+
+		$bookings_table  = $wpdb->prefix . 'bookings';
+		$customers_table = $wpdb->prefix . 'booking_customers';
+		$services_table  = $wpdb->prefix . 'booking_services';
+		$employees_table = $wpdb->prefix . 'booking_employees';
+
+		$all_bookings = $wpdb->get_results("
+    SELECT 
+        b.id AS booking_id,
+        c.name AS customer_name,
+        c.email AS customer_email,
+        s.name AS service_name,
+        e.name AS employee_name,
+        b.booking_date,
+        b.booking_time,
+        b.status,
+        b.notes,
+        b.created_at
+    FROM $bookings_table b
+    LEFT JOIN $customers_table c ON b.customer_id = c.id
+    LEFT JOIN $services_table s ON b.service_id = s.id
+    LEFT JOIN $employees_table e ON b.employee_id = e.id
+    ORDER BY b.created_at DESC
+");
+
+
+//		var_dump($bookings);
 		include_once BOOKING_PLUGIN_PATH . 'admin/partials/booking-admin-bookings.php';
 	}
 
@@ -783,6 +811,8 @@ class Booking_Admin {
 			'name' => sanitize_text_field($_POST['name']),
 			'email' => sanitize_email($_POST['email']),
 			'phone' => sanitize_text_field($_POST['phone']),
+			'address' => sanitize_text_field($_POST['address']),
+			'notes' => sanitize_text_field($_POST['notes']),
 		));
 
 		if (!$customer_id) {

@@ -36,35 +36,44 @@ if (!defined('ABSPATH')) {
 				if($bookings) {
 					// Display bookings table
 					?>
-					<table class="wp-list-table widefat fixed striped">
-						<thead>
-						<tr>
-							<th>ID</th>
-							<th>Customer</th>
-							<th>Service</th>
-							<th>Employee</th>
-							<th>Date & Time</th>
-							<th>Status</th>
-							<th>Actions</th>
-						</tr>
-						</thead>
-						<tbody>
-						<?php foreach($bookings as $booking): ?>
-							<tr>
-								<td><?php echo esc_html($booking->id); ?></td>
-								<td><?php echo esc_html($booking->customer_id); ?></td>
-								<td><?php echo esc_html($booking->service_id); ?></td>
-								<td><?php echo esc_html($booking->employee_id); ?></td>
-								<td><?php echo esc_html($booking->booking_time); ?></td>
-								<td><?php echo esc_html($booking->status); ?></td>
-								<td>
-									<a href="#" class="button action">Edit</a>
-									<a href="#" class="button action">Delete</a>
-								</td>
-							</tr>
-						<?php endforeach; ?>
-						</tbody>
-					</table>
+                    <table class="wp-list-table widefat fixed striped">
+                        <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Customer</th>
+                            <th>Service</th>
+                            <th>Employee</th>
+                            <th>Date & Time</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+						<?php if (!empty($all_bookings)): ?>
+							<?php foreach ($all_bookings as $booking): ?>
+                                <tr>
+                                    <td><?php echo esc_html($booking->booking_id); ?></td>
+                                    <td><?php echo esc_html($booking->customer_name); ?></td>
+                                    <td><?php echo esc_html($booking->service_name); ?></td>
+                                    <td><?php echo esc_html($booking->employee_name); ?></td>
+                                    <td><?php echo esc_html($booking->booking_date . ' ' . $booking->booking_time); ?></td>
+
+                                    <!-- Status -->
+                                    <td><?php echo esc_html($booking->status); ?></td>
+
+                                    <td>
+                                        <a href="#" class="button action">Edit</a>
+                                        <a href="#" class="button action">Delete</a>
+                                    </td>
+                                </tr>
+							<?php endforeach; ?>
+						<?php else: ?>
+                            <tr>
+                                <td colspan="7">No bookings found.</td>
+                            </tr>
+						<?php endif; ?>
+                        </tbody>
+                    </table>
 					<?php
 				} else {
 					echo '<p>No bookings found.</p>';

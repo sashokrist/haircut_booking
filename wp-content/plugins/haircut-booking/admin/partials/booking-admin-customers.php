@@ -35,7 +35,8 @@ if (isset($_GET['action']) && $_GET['action'] == 'edit' && isset($_GET['id'])) {
 
         <form method="post" action="">
 			<?php if ($editing): ?>
-                <input type="hidden" name="customer_id" value="<?php echo $customer->id; ?>">
+                <input type="hidden" name="customer_id" value="<?php echo $customer['id'];
+                ?>">
 			<?php endif; ?>
 
             <table class="form-table">
@@ -43,28 +44,28 @@ if (isset($_GET['action']) && $_GET['action'] == 'edit' && isset($_GET['id'])) {
                     <th><label for="name">Name</label></th>
                     <td>
                         <input type="text" name="name" id="name" class="regular-text"
-                               value="<?php echo $editing ? esc_attr($customer->name) : ''; ?>" required>
+                               value="<?php echo $editing ? esc_attr($customer['name']) : ''; ?>" required>
                     </td>
                 </tr>
                 <tr>
                     <th><label for="email">Email</label></th>
                     <td>
                         <input type="email" name="email" id="email" class="regular-text"
-                               value="<?php echo $editing ? esc_attr($customer->email) : ''; ?>" required>
+                               value="<?php echo $editing ? esc_attr($customer['email']) : ''; ?>" required>
                     </td>
                 </tr>
                 <tr>
                     <th><label for="phone">Phone</label></th>
                     <td>
                         <input type="text" name="phone" id="phone" class="regular-text"
-                               value="<?php echo $editing ? esc_attr($customer->phone) : ''; ?>">
+                               value="<?php echo $editing ? esc_attr($customer['phone']) : ''; ?>">
                     </td>
                 </tr>
                 <tr>
                     <th><label for="address">Address</label></th>
                     <td>
                     <textarea name="address" id="address" class="large-text" rows="3"><?php
-	                    echo $editing ? esc_textarea($customer->address) : '';
+	                    echo $editing ? esc_textarea($customer['address']) : '';
 	                    ?></textarea>
                     </td>
                 </tr>
@@ -72,7 +73,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'edit' && isset($_GET['id'])) {
                     <th><label for="notes">Notes</label></th>
                     <td>
                     <textarea name="notes" id="notes" class="large-text" rows="3"><?php
-	                    echo $editing ? esc_textarea($customer->notes) : '';
+	                    echo $editing ? esc_textarea($customer['notes']) : '';
 	                    ?></textarea>
                     </td>
                 </tr>
@@ -109,10 +110,12 @@ if (isset($_GET['action']) && $_GET['action'] == 'edit' && isset($_GET['id'])) {
                 <tbody>
 				<?php foreach ($customers as $cust): ?>
                     <tr>
-                        <td><?php echo $cust->id; ?></td>
-                        <td><?php echo esc_html($cust->name); ?></td>
-                        <td><?php echo esc_html($cust->email); ?></td>
-                        <td><?php echo esc_html($cust->phone); ?></td>
+                        <td><?php echo esc_html($cust->id ?? ''); ?></td>
+                        <td><?php echo esc_html($cust->name ?? ''); ?></td>
+                        <td><?php echo esc_html($cust->email ?? ''); ?></td>
+                        <td><?php echo esc_html($cust->phone ?? ''); ?></td>
+                        <td><?php echo esc_html($cust->address ?? ''); ?></td>
+                        <td><?php echo esc_html($cust->notes ?? ''); ?></td>
                         <td>
                             <a href="?page=booking-customers&action=edit&id=<?php echo $cust->id; ?>"
                                class="button button-small">Edit</a>
