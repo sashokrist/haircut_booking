@@ -18,30 +18,30 @@ if (!defined('ABSPATH')) {
 ?>
 
 <div class="wrap">
-	<h1><?php echo esc_html(get_admin_page_title()); ?></h1>
+	<h1>Служители</h1>
 
 	<!-- Add New Employee Form -->
 	<div class="booking-admin-container">
-		<h2>Add New Employee</h2>
+		<h2>Добави нов служител</h2>
         <form method="post" action="">
 			<?php wp_nonce_field('save_booking_employee', 'booking_employee_nonce'); ?>>
 
         <?php wp_nonce_field('save_booking_employee', 'booking_employee_nonce'); ?>
 			<table class="form-table">
 				<tr>
-					<th scope="row"><label for="employee_name">Name</label></th>
+					<th scope="row"><label for="employee_name">Име</label></th>
 					<td><input type="text" id="employee_name" name="employee_name" class="regular-text" required></td>
 				</tr>
 				<tr>
-					<th scope="row"><label for="employee_email">Email</label></th>
+					<th scope="row"><label for="employee_email">Имейл</label></th>
 					<td><input type="email" id="employee_email" name="employee_email" class="regular-text" required></td>
 				</tr>
 				<tr>
-					<th scope="row"><label for="employee_phone">Phone</label></th>
+					<th scope="row"><label for="employee_phone">Телефон</label></th>
 					<td><input type="text" id="employee_phone" name="employee_phone" class="regular-text"></td>
 				</tr>
 				<tr>
-					<th scope="row"><label for="employee_services">Services</label></th>
+					<th scope="row"><label for="employee_services">Услуги</label></th>
 					<td>
 						<?php
 						// Fetch available services
@@ -78,7 +78,7 @@ if (!defined('ABSPATH')) {
 
 	<!-- Employees List -->
 	<div class="booking-list-container">
-		<h2>Employees</h2>
+		<h2>Служители</h2>
 		<?php
 		// Your code to display employees
 		global $wpdb;

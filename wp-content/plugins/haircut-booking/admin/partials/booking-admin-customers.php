@@ -31,7 +31,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'edit' && isset($_GET['id'])) {
 // Customer form
 ?>
     <div class="wrap">
-        <h1><?php echo $editing ? 'Edit Customer' : 'Add New Customer'; ?></h1>
+        <h1><?php echo $editing ? 'Редактирай клиент' : 'Добави клиент'; ?></h1>
 
         <form method="post" action="">
 			<?php if ($editing): ?>
@@ -41,28 +41,28 @@ if (isset($_GET['action']) && $_GET['action'] == 'edit' && isset($_GET['id'])) {
 
             <table class="form-table">
                 <tr>
-                    <th><label for="name">Name</label></th>
+                    <th><label for="name">Име</label></th>
                     <td>
                         <input type="text" name="name" id="name" class="regular-text"
                                value="<?php echo $editing ? esc_attr($customer['name']) : ''; ?>" required>
                     </td>
                 </tr>
                 <tr>
-                    <th><label for="email">Email</label></th>
+                    <th><label for="email">Имейл</label></th>
                     <td>
                         <input type="email" name="email" id="email" class="regular-text"
                                value="<?php echo $editing ? esc_attr($customer['email']) : ''; ?>" required>
                     </td>
                 </tr>
                 <tr>
-                    <th><label for="phone">Phone</label></th>
+                    <th><label for="phone">Телефон</label></th>
                     <td>
                         <input type="text" name="phone" id="phone" class="regular-text"
                                value="<?php echo $editing ? esc_attr($customer['phone']) : ''; ?>">
                     </td>
                 </tr>
                 <tr>
-                    <th><label for="address">Address</label></th>
+                    <th><label for="address">Адрес</label></th>
                     <td>
                     <textarea name="address" id="address" class="large-text" rows="3"><?php
 	                    echo $editing ? esc_textarea($customer['address']) : '';
@@ -70,7 +70,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'edit' && isset($_GET['id'])) {
                     </td>
                 </tr>
                 <tr>
-                    <th><label for="notes">Notes</label></th>
+                    <th><label for="notes">Бележка</label></th>
                     <td>
                     <textarea name="notes" id="notes" class="large-text" rows="3"><?php
 	                    echo $editing ? esc_textarea($customer['notes']) : '';
@@ -87,7 +87,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'edit' && isset($_GET['id'])) {
 
         <hr>
 
-        <h2>All Customers</h2>
+        <h2>Всички клиенти</h2>
 
 		<?php
 		// Display customers list

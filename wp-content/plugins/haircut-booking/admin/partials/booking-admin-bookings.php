@@ -18,7 +18,7 @@ if (!defined('ABSPATH')) {
 ?>
 
 <div class="wrap">
-	<h1><?php echo esc_html(get_admin_page_title()); ?></h1>
+	<h1>Резервации</h1>
 
 	<!-- Add your bookings management interface here -->
 	<div class="booking-admin-container">

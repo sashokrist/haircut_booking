@@ -18,12 +18,12 @@ if (!defined('ABSPATH')) {
 ?>
 
 <div class="wrap">
-	<h1><?php echo esc_html(get_admin_page_title()); ?></h1>
+	<h1>Услуги</h1>
 
 	<!-- Add New Service Form -->
 	<!-- Add New Service Form -->
 	<div class="booking-admin-container">
-		<h2>Add New Service</h2>
+		<h2>Всички услуги</h2>
 		<form method="post" action="">
 			<?php wp_nonce_field('add_service_nonce'); ?>
 			<table class="form-table">
@@ -45,14 +45,14 @@ if (!defined('ABSPATH')) {
 				</tr>
 			</table>
 			<p class="submit">
-				<input type="submit" name="add_service" class="button button-primary" value="Add Service">
+				<input type="submit" name="add_service" class="button button-primary" value="Добави услуга">
 			</p>
 		</form>
 	</div>
 
 	<!-- Services List -->
 	<div class="booking-list-container">
-		<h2>Services</h2>
+		<h2>Услуги</h2>
 		<?php
 		// Your code to display services
 		global $wpdb;

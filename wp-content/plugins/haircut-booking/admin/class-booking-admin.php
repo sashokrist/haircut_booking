@@ -72,8 +72,8 @@ class Booking_Admin {
 	public function add_admin_menu() {
 		// Main menu
 		add_menu_page(
-			__('Salon Booking', 'booking'),
-			__('Salon Booking', 'booking'),
+			__('Резервации', 'booking'),
+			__('Резервации', 'booking'),
 			'manage_options',
 			'booking',
 			array($this, 'display_bookings_page'),
@@ -84,8 +84,8 @@ class Booking_Admin {
 		// Bookings submenu
 		add_submenu_page(
 			'booking',
-			__('Bookings', 'booking'),
-			__('Bookings', 'booking'),
+			__('Резервации', 'booking'),
+			__('Резервации', 'booking'),
 			'manage_options',
 			'booking',
 			array($this, 'display_bookings_page')
@@ -94,8 +94,8 @@ class Booking_Admin {
 		// Services submenu
 		add_submenu_page(
 			'booking',
-			__('Services', 'booking'),
-			__('Services', 'booking'),
+			__('Услуги', 'booking'),
+			__('Услуги', 'booking'),
 			'manage_options',
 			'booking-services',
 			array($this, 'display_services_page')
@@ -104,8 +104,8 @@ class Booking_Admin {
 		// Employees submenu
 		add_submenu_page(
 			'booking',
-			__('Employees', 'booking'),
-			__('Employees', 'booking'),
+			__('Служители', 'booking'),
+			__('Служители', 'booking'),
 			'manage_options',
 			'booking-employees',
 			array($this, 'display_employees_page')
@@ -114,8 +114,8 @@ class Booking_Admin {
 		// Customers submenu
 		add_submenu_page(
 			'booking',
-			__('Customers', 'booking'),
-			__('Customers', 'booking'),
+			__('Клиенти', 'booking'),
+			__('Клиенти', 'booking'),
 			'manage_options',
 			'booking-customers',
 			array($this, 'display_customers_page')
@@ -124,8 +124,8 @@ class Booking_Admin {
 		// Settings submenu
 		add_submenu_page(
 			'booking',
-			__('Settings', 'booking'),
-			__('Settings', 'booking'),
+			__('Настройки', 'booking'),
+			__('Настройки', 'booking'),
 			'manage_options',
 			'booking-settings',
 			array($this, 'display_settings_page')
