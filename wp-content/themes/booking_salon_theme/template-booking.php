@@ -8,7 +8,7 @@ get_header();
 ?>
 
 	<main class="container py-5">
-		<h1 class="text-center mb-4">Запазете си часt</h1>
+		<h1 class="text-center mb-4">Запазете си час</h1>
 
 		<div class="row justify-content-center">
 			<div class="col-md-8">
@@ -17,7 +17,7 @@ get_header();
 						<form id="booking-form" method="post" action="">
 							<!-- Customer Information -->
 							<div class="mb-4">
-								<h3Вашата информация</h3>
+								<h3>Вашата информация</h3>
 								<div class="mb-3">
 									<label for="customer_name" class="form-label">Име *</label>
 									<input type="text" class="form-control" id="customer_name" name="customer_name" required>
