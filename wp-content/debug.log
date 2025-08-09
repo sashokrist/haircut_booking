@@ -1612,3 +1612,11 @@
 [09-Aug-2025 10:44:19 UTC] PHP   4. WP_Hook->apply_filters($value = '', $args = [0 => '']) C:\wamp64\www\booking\wp-includes\class-wp-hook.php:348
 [09-Aug-2025 10:44:19 UTC] PHP   5. Booking_Admin->display_bookings_page('') C:\wamp64\www\booking\wp-includes\class-wp-hook.php:324
 [09-Aug-2025 10:44:19 UTC] PHP   6. include_once() C:\wamp64\www\booking\wp-content\plugins\haircut-booking\admin\class-booking-admin.php:168
+[09-Aug-2025 10:53:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Booking_Customer::update() in C:\wamp64\www\booking\wp-content\plugins\haircut-booking\admin\class-booking-admin.php:331
+Stack trace:
+#0 C:\wamp64\www\booking\wp-includes\class-wp-hook.php(324): Booking_Admin->display_customers_page('')
+#1 C:\wamp64\www\booking\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\wamp64\www\booking\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\booking\wp-admin\admin.php(260): do_action('salon-booking_p...')
+#4 {main}
+  thrown in C:\wamp64\www\booking\wp-content\plugins\haircut-booking\admin\class-booking-admin.php on line 331

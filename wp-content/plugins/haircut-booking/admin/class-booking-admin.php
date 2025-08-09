@@ -328,7 +328,7 @@ class Booking_Admin {
 				$customer_id = intval($_POST['customer_id']);
 
 				// Update existing customer
-				$result = Booking_Customer::update($customer_id, [
+				$result = Booking_Customer::update_customer($customer_id, [
 					'name' => $name,
 					'email' => $email,
 					'phone' => $phone,
