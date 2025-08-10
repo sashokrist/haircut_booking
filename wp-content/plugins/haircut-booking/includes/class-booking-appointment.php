@@ -20,7 +20,7 @@ class Booking_Appointment {
 	 */
 	public static function get_bookings($args = array()) {
 		global $wpdb;
-		$table_name = $wpdb->prefix . 'booking_appointments';
+		$table_name = $wpdb->prefix . 'bookings';
 		$customers_table = $wpdb->prefix . 'booking_customers';
 		$services_table = $wpdb->prefix . 'booking_services';
 		$employees_table = $wpdb->prefix . 'booking_employees';
@@ -270,8 +270,11 @@ class Booking_Appointment {
 	 * @return   bool     True on success, false on failure
 	 */
 	public static function update_booking($id, $booking_data) {
+		error_log('update_booking AJAX triggered');
+
+//		var_dump($booking_data);
 		global $wpdb;
-		$table_name = $wpdb->prefix . 'booking_appointments';
+		$table_name = $wpdb->prefix . 'bookings';
 
 		// Check if the time slot is available
 		if (!self::is_time_slot_available(

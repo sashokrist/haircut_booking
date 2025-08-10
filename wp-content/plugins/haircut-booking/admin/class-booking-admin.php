@@ -56,11 +56,18 @@ class Booking_Admin {
 	 * @since    1.0.0
 	 */
 	public function enqueue_scripts() {
-		wp_enqueue_script($this->plugin_name, BOOKING_PLUGIN_URL . 'admin/js/booking-admin.js', array('jquery'), $this->version, false);
+		wp_enqueue_script(
+			'booking-admin-js',
+			BOOKING_PLUGIN_URL . 'admin/js/booking-admin.js', // Ensure the path is correct
+			array('jquery'), // jQuery is a dependency
+			time(),
+			true // Load in the footer
+		);
 
-		wp_localize_script($this->plugin_name, 'booking_admin_ajax', array(
+		// AJAX and other global variables for JavaScript
+		wp_localize_script('booking-admin-js', 'booking_admin_ajax', array(
 			'ajax_url' => admin_url('admin-ajax.php'),
-			'nonce' => wp_create_nonce('booking_admin_nonce'),
+			'nonce'    => wp_create_nonce('booking_admin_nonce'),
 		));
 	}
 
@@ -155,7 +162,7 @@ class Booking_Admin {
         b.booking_date,
         b.booking_time,
         b.status,
-        b.notes,
+        b.notes AS booking_note,
         b.created_at
     FROM $bookings_table b
     LEFT JOIN $customers_table c ON b.customer_id = c.id
@@ -502,54 +509,40 @@ class Booking_Admin {
 	 * @since    1.0.0
 	 */
 	public function update_booking() {
+		// Verify nonce for AJAX security.
 		check_ajax_referer('booking_admin_nonce', 'nonce');
 
+		// Ensure the current user has the proper permission.
 		if (!current_user_can('manage_options')) {
 			wp_send_json_error('Permission denied');
 		}
 
+		// Validate and sanitize the input data.
 		$booking_id = intval($_POST['booking_id']);
+		if (!$booking_id) {
+			wp_send_json_error('Invalid booking ID');
+		}
 
-		// Get service price for cost calculation
-		global $wpdb;
-		$services_table = $wpdb->prefix . 'booking_services';
-		$service_id = intval($_POST['service_id']);
-
-		$service = $wpdb->get_row(
-			$wpdb->prepare("SELECT price FROM $services_table WHERE id = %d", $service_id),
-			ARRAY_A
+		$booking_data = array(
+			'booking_date' => sanitize_text_field($_POST['date']),
+			'booking_time' => sanitize_text_field($_POST['time']),
+			'customer_id'  => intval($_POST['customer_id']),
+			'service_id'   => intval($_POST['service_id']),
+			'status'       => sanitize_text_field($_POST['status']),
 		);
 
-		if (!$service) {
-			wp_send_json_error('Service not found');
-		}
+		// Update the booking in the database using the Booking_Appointment class.
+		$result = Booking_Appointment::update_booking($booking_id, $booking_data);
 
-		// Update customer
-		$customer_id = intval($_POST['customer_id']);
-		Booking_Customer::update_customer($customer_id, array(
-			'name' => sanitize_text_field($_POST['customer_name']),
-			'email' => sanitize_email($_POST['customer_email']),
-			'phone' => sanitize_text_field($_POST['customer_phone']),
-		));
-
-		// Update booking
-		$result = Booking_Appointment::update_booking($booking_id, array(
-			'customer_id' => $customer_id,
-			'service_id' => $service_id,
-			'employee_id' => intval($_POST['employee_id']),
-			'booking_date' => sanitize_text_field($_POST['booking_date']),
-			'booking_time' => sanitize_text_field($_POST['booking_time']),
-			'status' => sanitize_text_field($_POST['status']),
-			'notes' => sanitize_textarea_field($_POST['notes']),
-			'cost' => $service['price'],
-		));
-
+		// Check for update failure and handle accordingly.
 		if ($result === false) {
-			wp_send_json_error('Failed to update booking. Time slot might be unavailable.');
+			wp_send_json_error('Failed to update booking');
 		}
 
+		// Success: Return a success message and optional data.
 		wp_send_json_success(array(
-			'message' => 'Booking updated successfully'
+			'message' => 'Booking updated successfully',
+			'data'    => $booking_data
 		));
 	}
 

@@ -21,6 +21,7 @@ class Booking_Service {
 		$table_name = $wpdb->prefix . 'booking_services';
 
 		$services = $wpdb->get_results("SELECT * FROM $table_name ORDER BY name ASC", ARRAY_A);
+		error_log('Services Data: ' . print_r($services, true));
 
 		return $services;
 	}

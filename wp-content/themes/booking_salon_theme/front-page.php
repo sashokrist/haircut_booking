@@ -5,7 +5,7 @@
         <section class="py-5">
             <h2 class="display-5 fw-bold">Добре дошли във <?php bloginfo('name'); ?></h2>
             <p class="lead">Резервирайте следващия си час за фризьор онлайн за секунди.</p>
-            <a href="/booking" class="btn btn-primary btn-lg mt-3">Запази си час</a>
+            <a href="/?page_id=19" class="btn btn-primary btn-lg mt-3">Запази си час</a>
         </section>
 
         <!-- Services Section -->

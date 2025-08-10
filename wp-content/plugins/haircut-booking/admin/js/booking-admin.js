@@ -3,8 +3,16 @@
  */
 (function($) {
     'use strict';
+    console.log('Number of .edit-booking elements:', $('.edit-booking').length);
 
     $(document).ready(function() {
+
+        console.log('Admin script loaded and jQuery is ready.');
+
+        // Debug buttons
+        console.log("List of .edit-booking elements:", $('.edit-booking'));
+
+
         // Initialize date pickers
         if ($.fn.datepicker) {
             $('.datepicker').datepicker({
@@ -13,7 +21,7 @@
         }
 
         // BOOKINGS
-        if ($('#booking-list').length) {
+     //   if ($('#booking-list').length) {
             // Load bookings on page load
             loadBookings();
 
@@ -64,7 +72,12 @@
             });
 
             // Edit booking
-            $(document).on('click', '.edit-booking', function() {
+            $(document).on('click', '.edit-booking', function(e) {
+                e.preventDefault();
+
+                console.log('Edit button clicked.');
+
+
                 var bookingId = $(this).data('id');
                 var row = $(this).closest('tr');
 
@@ -82,12 +95,15 @@
                 $('#edit-notes').val(row.data('notes'));
 
                 $('#edit-booking-modal').show();
+                console.log('Modal should now be visible');
+
             });
 
             // Update booking form submission
             $('#edit-booking-form').on('submit', function(e) {
                 e.preventDefault();
 
+                console.log($(this).serialize());
                 $.ajax({
                     url: booking_admin_ajax.ajax_url,
                     type: 'POST',
@@ -134,7 +150,7 @@
                     });
                 }
             });
-        }
+       // }
 
         // SERVICES
         if ($('#service-list').length) {
