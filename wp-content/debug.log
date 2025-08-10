@@ -1,4 +1,4 @@
-[10-Aug-2025 08:50:05 UTC] Services Data: Array
+[10-Aug-2025 09:49:59 UTC] Services Data: Array
 (
     [0] => Array
         (
@@ -42,39 +42,808 @@
 
 )
 
-[10-Aug-2025 08:50:05 UTC] PHP Warning:  Attempt to read property "id" on array in C:\wamp64\www\booking\wp-content\plugins\haircut-booking\admin\partials\booking-admin-bookings.php on line 188
-[10-Aug-2025 08:50:05 UTC] PHP Stack trace:
-[10-Aug-2025 08:50:05 UTC] PHP   1. {main}() C:\wamp64\www\booking\wp-admin\admin.php:0
-[10-Aug-2025 08:50:05 UTC] PHP   2. do_action($hook_name = 'toplevel_page_booking') C:\wamp64\www\booking\wp-admin\admin.php:260
-[10-Aug-2025 08:50:05 UTC] PHP   3. WP_Hook->do_action($args = [0 => '']) C:\wamp64\www\booking\wp-includes\plugin.php:517
-[10-Aug-2025 08:50:05 UTC] PHP   4. WP_Hook->apply_filters($value = '', $args = [0 => '']) C:\wamp64\www\booking\wp-includes\class-wp-hook.php:348
-[10-Aug-2025 08:50:05 UTC] PHP   5. Booking_Admin->display_bookings_page('') C:\wamp64\www\booking\wp-includes\class-wp-hook.php:324
-[10-Aug-2025 08:50:05 UTC] PHP   6. include_once() C:\wamp64\www\booking\wp-content\plugins\haircut-booking\admin\class-booking-admin.php:176
-[10-Aug-2025 08:50:05 UTC] PHP Warning:  Attempt to read property "id" on array in C:\wamp64\www\booking\wp-content\plugins\haircut-booking\admin\partials\booking-admin-bookings.php on line 188
-[10-Aug-2025 08:50:05 UTC] PHP Stack trace:
-[10-Aug-2025 08:50:05 UTC] PHP   1. {main}() C:\wamp64\www\booking\wp-admin\admin.php:0
-[10-Aug-2025 08:50:05 UTC] PHP   2. do_action($hook_name = 'toplevel_page_booking') C:\wamp64\www\booking\wp-admin\admin.php:260
-[10-Aug-2025 08:50:05 UTC] PHP   3. WP_Hook->do_action($args = [0 => '']) C:\wamp64\www\booking\wp-includes\plugin.php:517
-[10-Aug-2025 08:50:05 UTC] PHP   4. WP_Hook->apply_filters($value = '', $args = [0 => '']) C:\wamp64\www\booking\wp-includes\class-wp-hook.php:348
-[10-Aug-2025 08:50:05 UTC] PHP   5. Booking_Admin->display_bookings_page('') C:\wamp64\www\booking\wp-includes\class-wp-hook.php:324
-[10-Aug-2025 08:50:05 UTC] PHP   6. include_once() C:\wamp64\www\booking\wp-content\plugins\haircut-booking\admin\class-booking-admin.php:176
-[10-Aug-2025 08:50:05 UTC] PHP Warning:  Attempt to read property "id" on array in C:\wamp64\www\booking\wp-content\plugins\haircut-booking\admin\partials\booking-admin-bookings.php on line 188
-[10-Aug-2025 08:50:05 UTC] PHP Stack trace:
-[10-Aug-2025 08:50:05 UTC] PHP   1. {main}() C:\wamp64\www\booking\wp-admin\admin.php:0
-[10-Aug-2025 08:50:05 UTC] PHP   2. do_action($hook_name = 'toplevel_page_booking') C:\wamp64\www\booking\wp-admin\admin.php:260
-[10-Aug-2025 08:50:05 UTC] PHP   3. WP_Hook->do_action($args = [0 => '']) C:\wamp64\www\booking\wp-includes\plugin.php:517
-[10-Aug-2025 08:50:05 UTC] PHP   4. WP_Hook->apply_filters($value = '', $args = [0 => '']) C:\wamp64\www\booking\wp-includes\class-wp-hook.php:348
-[10-Aug-2025 08:50:05 UTC] PHP   5. Booking_Admin->display_bookings_page('') C:\wamp64\www\booking\wp-includes\class-wp-hook.php:324
-[10-Aug-2025 08:50:05 UTC] PHP   6. include_once() C:\wamp64\www\booking\wp-content\plugins\haircut-booking\admin\class-booking-admin.php:176
-[10-Aug-2025 08:50:05 UTC] PHP Warning:  Attempt to read property "id" on array in C:\wamp64\www\booking\wp-content\plugins\haircut-booking\admin\partials\booking-admin-bookings.php on line 188
-[10-Aug-2025 08:50:05 UTC] PHP Stack trace:
-[10-Aug-2025 08:50:05 UTC] PHP   1. {main}() C:\wamp64\www\booking\wp-admin\admin.php:0
-[10-Aug-2025 08:50:05 UTC] PHP   2. do_action($hook_name = 'toplevel_page_booking') C:\wamp64\www\booking\wp-admin\admin.php:260
-[10-Aug-2025 08:50:05 UTC] PHP   3. WP_Hook->do_action($args = [0 => '']) C:\wamp64\www\booking\wp-includes\plugin.php:517
-[10-Aug-2025 08:50:05 UTC] PHP   4. WP_Hook->apply_filters($value = '', $args = [0 => '']) C:\wamp64\www\booking\wp-includes\class-wp-hook.php:348
-[10-Aug-2025 08:50:05 UTC] PHP   5. Booking_Admin->display_bookings_page('') C:\wamp64\www\booking\wp-includes\class-wp-hook.php:324
-[10-Aug-2025 08:50:05 UTC] PHP   6. include_once() C:\wamp64\www\booking\wp-content\plugins\haircut-booking\admin\class-booking-admin.php:176
-[10-Aug-2025 08:54:28 UTC] Services Data: Array
+[10-Aug-2025 09:52:23 UTC] Services Data: Array
+(
+    [0] => Array
+        (
+            [id] => 2
+            [name] => Color Hair
+            [description] => Hair coloring service
+            [duration] => 90
+            [price] => 75.00
+            [created_at] => 2025-08-06 21:40:11
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [name] => Haircut
+            [description] => Standard haircut service
+            [duration] => 30
+            [price] => 35.00
+            [created_at] => 2025-08-06 21:40:11
+        )
+
+    [2] => Array
+        (
+            [id] => 11
+            [name] => remont
+            [description] => remont remont remont
+            [duration] => 30
+            [price] => 100.00
+            [created_at] => 2025-08-07 09:39:29
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [name] => Styling
+            [description] => Hair styling service
+            [duration] => 45
+            [price] => 45.00
+            [created_at] => 2025-08-06 21:40:11
+        )
+
+)
+
+[10-Aug-2025 09:52:45 UTC] PHP Fatal error:  Uncaught Error: Xdebug has detected a possible infinite loop, and aborted your script with a stack depth of '512' frames in C:\wamp64\www\booking\wp-includes\load.php:1445
+Stack trace:
+#0 C:\wamp64\www\booking\wp-includes\capabilities.php(1335): is_multisite()
+#1 C:\wamp64\www\booking\wp-includes\class-wp-hook.php(324): wp_maybe_grant_site_health_caps(Array, Array, Array, Object(WP_User))
+#2 C:\wamp64\www\booking\wp-includes\plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#3 C:\wamp64\www\booking\wp-includes\class-wp-user.php(815): apply_filters('user_has_cap', Array, Array, Array, Object(WP_User))
+#4 C:\wamp64\www\booking\wp-includes\capabilities.php(1018): WP_User->has_cap('manage_options')
+#5 C:\wamp64\www\booking\wp-includes\capabilities.php(911): user_can(Object(WP_User), 'manage_options')
+#6 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(277): current_user_can('manage_options')
+#7 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#8 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#9 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#10 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#11 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#12 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#13 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#14 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#15 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#16 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#17 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#18 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#19 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#20 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#21 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#22 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#23 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#24 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#25 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#26 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#27 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#28 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#29 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#30 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#31 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#32 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#33 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#34 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#35 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#36 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#37 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#38 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#39 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#40 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#41 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#42 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#43 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#44 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#45 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#46 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#47 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#48 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#49 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#50 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#51 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#52 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#53 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#54 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#55 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#56 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#57 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#58 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#59 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#60 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#61 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#62 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#63 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#64 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#65 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#66 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#67 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#68 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#69 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#70 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#71 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#72 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#73 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#74 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#75 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#76 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#77 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#78 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#79 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#80 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#81 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#82 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#83 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#84 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#85 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#86 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#87 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#88 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#89 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#90 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#91 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#92 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#93 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#94 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#95 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#96 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#97 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#98 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#99 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#100 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#101 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#102 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#103 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#104 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#105 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#106 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#107 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#108 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#109 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#110 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#111 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#112 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#113 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#114 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#115 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#116 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#117 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#118 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#119 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#120 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#121 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#122 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#123 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#124 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#125 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#126 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#127 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#128 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#129 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#130 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#131 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#132 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#133 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#134 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#135 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#136 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#137 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#138 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#139 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#140 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#141 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#142 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#143 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#144 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#145 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#146 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#147 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#148 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#149 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#150 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#151 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#152 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#153 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#154 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#155 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#156 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#157 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#158 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#159 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#160 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#161 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#162 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#163 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#164 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#165 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#166 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#167 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#168 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#169 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#170 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#171 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#172 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#173 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#174 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#175 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#176 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#177 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#178 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#179 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#180 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#181 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#182 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#183 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#184 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#185 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#186 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#187 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#188 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#189 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#190 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#191 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#192 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#193 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#194 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#195 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#196 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#197 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#198 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#199 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#200 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#201 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#202 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#203 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#204 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#205 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#206 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#207 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#208 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#209 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#210 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#211 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#212 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#213 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#214 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#215 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#216 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#217 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#218 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#219 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#220 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#221 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#222 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#223 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#224 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#225 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#226 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#227 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#228 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#229 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#230 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#231 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#232 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#233 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#234 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#235 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#236 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#237 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#238 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#239 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#240 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#241 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#242 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#243 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#244 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#245 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#246 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#247 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#248 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#249 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#250 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#251 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#252 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#253 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#254 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#255 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#256 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#257 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#258 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#259 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#260 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#261 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#262 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#263 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#264 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#265 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#266 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#267 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#268 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#269 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#270 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#271 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#272 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#273 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#274 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#275 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#276 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#277 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#278 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#279 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#280 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#281 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#282 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#283 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#284 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#285 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#286 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#287 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#288 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#289 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#290 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#291 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#292 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#293 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#294 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#295 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#296 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#297 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#298 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#299 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#300 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#301 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#302 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#303 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#304 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#305 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#306 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#307 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#308 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#309 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#310 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#311 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#312 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#313 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#314 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#315 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#316 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#317 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#318 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#319 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#320 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#321 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#322 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#323 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#324 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#325 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#326 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#327 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#328 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#329 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#330 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#331 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#332 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#333 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#334 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#335 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#336 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#337 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#338 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#339 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#340 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#341 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#342 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#343 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#344 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#345 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#346 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#347 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#348 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#349 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#350 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#351 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#352 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#353 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#354 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#355 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#356 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#357 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#358 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#359 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#360 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#361 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#362 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#363 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#364 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#365 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#366 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#367 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#368 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#369 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#370 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#371 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#372 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#373 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#374 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#375 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#376 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#377 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#378 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#379 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#380 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#381 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#382 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#383 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#384 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#385 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#386 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#387 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#388 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#389 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#390 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#391 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#392 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#393 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#394 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#395 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#396 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#397 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#398 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#399 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#400 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#401 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#402 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#403 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#404 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#405 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#406 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#407 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#408 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#409 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#410 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#411 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#412 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#413 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#414 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#415 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#416 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#417 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#418 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#419 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#420 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#421 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#422 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#423 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#424 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#425 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#426 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#427 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#428 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#429 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#430 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#431 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#432 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#433 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#434 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#435 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#436 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#437 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#438 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#439 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#440 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#441 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#442 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#443 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#444 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#445 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#446 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#447 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#448 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#449 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#450 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#451 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#452 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#453 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#454 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#455 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#456 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#457 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#458 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#459 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#460 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#461 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#462 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#463 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#464 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#465 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#466 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#467 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#468 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#469 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#470 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#471 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#472 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#473 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#474 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#475 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#476 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#477 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#478 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#479 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#480 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#481 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#482 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#483 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#484 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#485 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#486 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#487 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#488 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#489 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#490 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#491 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#492 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#493 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#494 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#495 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#496 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#497 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#498 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#499 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#500 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#501 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#502 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#503 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#504 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#505 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#506 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\includes\class-booking-appointment.php(312): Booking_Appointment->update_booking(13, Array)
+#507 C:\wamp64\www\booking\wp-content\plugins\haircut-booking\admin\class-booking-admin.php(551): Booking_Appointment->update_booking(13, Array)
+#508 C:\wamp64\www\booking\wp-includes\class-wp-hook.php(324): Booking_Admin->update_booking('')
+#509 C:\wamp64\www\booking\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#510 C:\wamp64\www\booking\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#511 C:\wamp64\www\booking\wp-admin\admin-ajax.php(192): do_action('wp_ajax_update_...')
+#512 {main}
+  thrown in C:\wamp64\www\booking\wp-includes\load.php on line 1445
+[10-Aug-2025 09:57:30 UTC] Services Data: Array
+(
+    [0] => Array
+        (
+            [id] => 2
+            [name] => Color Hair
+            [description] => Hair coloring service
+            [duration] => 90
+            [price] => 75.00
+            [created_at] => 2025-08-06 21:40:11
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [name] => Haircut
+            [description] => Standard haircut service
+            [duration] => 30
+            [price] => 35.00
+            [created_at] => 2025-08-06 21:40:11
+        )
+
+    [2] => Array
+        (
+            [id] => 11
+            [name] => remont
+            [description] => remont remont remont
+            [duration] => 30
+            [price] => 100.00
+            [created_at] => 2025-08-07 09:39:29
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [name] => Styling
+            [description] => Hair styling service
+            [duration] => 45
+            [price] => 45.00
+            [created_at] => 2025-08-06 21:40:11
+        )
+
+)
+
+[10-Aug-2025 09:57:53 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class Booking_Admin does not have a method "update_booking" in C:\wamp64\www\booking\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\wamp64\www\booking\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 C:\wamp64\www\booking\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\wamp64\www\booking\wp-admin\admin-ajax.php(192): do_action('wp_ajax_update_...')
+#3 {main}
+  thrown in C:\wamp64\www\booking\wp-includes\class-wp-hook.php on line 324
+[10-Aug-2025 09:58:29 UTC] Services Data: Array
+(
+    [0] => Array
+        (
+            [id] => 2
+            [name] => Color Hair
+            [description] => Hair coloring service
+            [duration] => 90
+            [price] => 75.00
+            [created_at] => 2025-08-06 21:40:11
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [name] => Haircut
+            [description] => Standard haircut service
+            [duration] => 30
+            [price] => 35.00
+            [created_at] => 2025-08-06 21:40:11
+        )
+
+    [2] => Array
+        (
+            [id] => 11
+            [name] => remont
+            [description] => remont remont remont
+            [duration] => 30
+            [price] => 100.00
+            [created_at] => 2025-08-07 09:39:29
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [name] => Styling
+            [description] => Hair styling service
+            [duration] => 45
+            [price] => 45.00
+            [created_at] => 2025-08-06 21:40:11
+        )
+
+)
+
+[10-Aug-2025 09:58:56 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class Booking_Admin does not have a method "update_booking" in C:\wamp64\www\booking\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\wamp64\www\booking\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 C:\wamp64\www\booking\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\wamp64\www\booking\wp-admin\admin-ajax.php(192): do_action('wp_ajax_update_...')
+#3 {main}
+  thrown in C:\wamp64\www\booking\wp-includes\class-wp-hook.php on line 324
+[10-Aug-2025 09:59:59 UTC] Services Data: Array
+(
+    [0] => Array
+        (
+            [id] => 2
+            [name] => Color Hair
+            [description] => Hair coloring service
+            [duration] => 90
+            [price] => 75.00
+            [created_at] => 2025-08-06 21:40:11
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [name] => Haircut
+            [description] => Standard haircut service
+            [duration] => 30
+            [price] => 35.00
+            [created_at] => 2025-08-06 21:40:11
+        )
+
+    [2] => Array
+        (
+            [id] => 11
+            [name] => remont
+            [description] => remont remont remont
+            [duration] => 30
+            [price] => 100.00
+            [created_at] => 2025-08-07 09:39:29
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [name] => Styling
+            [description] => Hair styling service
+            [duration] => 45
+            [price] => 45.00
+            [created_at] => 2025-08-06 21:40:11
+        )
+
+)
+
+[10-Aug-2025 10:01:44 UTC] Services Data: Array
+(
+    [0] => Array
+        (
+            [id] => 2
+            [name] => Color Hair
+            [description] => Hair coloring service
+            [duration] => 90
+            [price] => 75.00
+            [created_at] => 2025-08-06 21:40:11
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [name] => Haircut
+            [description] => Standard haircut service
+            [duration] => 30
+            [price] => 35.00
+            [created_at] => 2025-08-06 21:40:11
+        )
+
+    [2] => Array
+        (
+            [id] => 11
+            [name] => remont
+            [description] => remont remont remont
+            [duration] => 30
+            [price] => 100.00
+            [created_at] => 2025-08-07 09:39:29
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [name] => Styling
+            [description] => Hair styling service
+            [duration] => 45
+            [price] => 45.00
+            [created_at] => 2025-08-06 21:40:11
+        )
+
+)
+
+[10-Aug-2025 10:06:44 UTC] Services Data: Array
+(
+    [0] => Array
+        (
+            [id] => 2
+            [name] => Color Hair
+            [description] => Hair coloring service
+            [duration] => 90
+            [price] => 75.00
+            [created_at] => 2025-08-06 21:40:11
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [name] => Haircut
+            [description] => Standard haircut service
+            [duration] => 30
+            [price] => 35.00
+            [created_at] => 2025-08-06 21:40:11
+        )
+
+    [2] => Array
+        (
+            [id] => 11
+            [name] => remont
+            [description] => remont remont remont
+            [duration] => 30
+            [price] => 100.00
+            [created_at] => 2025-08-07 09:39:29
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [name] => Styling
+            [description] => Hair styling service
+            [duration] => 45
+            [price] => 45.00
+            [created_at] => 2025-08-06 21:40:11
+        )
+
+)
+
+[10-Aug-2025 10:07:04 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class Booking_Admin does not have a method "update_booking" in C:\wamp64\www\booking\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\wamp64\www\booking\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 C:\wamp64\www\booking\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\wamp64\www\booking\wp-admin\admin-ajax.php(192): do_action('wp_ajax_update_...')
+#3 {main}
+  thrown in C:\wamp64\www\booking\wp-includes\class-wp-hook.php on line 324
+[10-Aug-2025 10:07:26 UTC] Services Data: Array
 (
     [0] => Array
         (

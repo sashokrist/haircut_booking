@@ -269,45 +269,58 @@ class Booking_Appointment {
 	 * @param    array    $booking_data    Booking data
 	 * @return   bool     True on success, false on failure
 	 */
-	public static function update_booking($id, $booking_data) {
-		error_log('update_booking AJAX triggered');
+	public function update_booking() {
+		// Verify nonce for security
+		check_ajax_referer('booking_admin_nonce', 'nonce');
 
-//		var_dump($booking_data);
-		global $wpdb;
-		$table_name = $wpdb->prefix . 'bookings';
-
-		// Check if the time slot is available
-		if (!self::is_time_slot_available(
-			$booking_data['employee_id'],
-			$booking_data['booking_date'],
-			$booking_data['booking_time'],
-			$booking_data['service_id'],
-			$id
-		)) {
-			return false;
+		// Ensure the current user has proper permissions
+		if (!current_user_can('manage_options')) {
+			wp_send_json_error('Permission denied.');
 		}
 
-		$result = $wpdb->update(
-			$table_name,
-			array(
-				'customer_id' => intval($booking_data['customer_id']),
-				'service_id' => intval($booking_data['service_id']),
-				'employee_id' => intval($booking_data['employee_id']),
-				'booking_date' => sanitize_text_field($booking_data['booking_date']),
-				'booking_time' => sanitize_text_field($booking_data['booking_time']),
-				'status' => sanitize_text_field($booking_data['status']),
-				'notes' => sanitize_textarea_field($booking_data['notes']),
-				'cost' => floatval($booking_data['cost']),
-			),
-			array('id' => $id)
+		// Validate and sanitize the input data
+		$booking_id = isset($_POST['booking_id']) ? intval($_POST['booking_id']) : 0;
+		if (!$booking_id) {
+			wp_send_json_error('Invalid booking ID.');
+		}
+
+		$booking_data = array(
+			'booking_date' => isset($_POST['date']) ? sanitize_text_field($_POST['date']) : null,
+			'booking_time' => isset($_POST['time']) ? sanitize_text_field($_POST['time']) : null,
+			'customer_id'  => isset($_POST['customer_id']) ? intval($_POST['customer_id']) : null,
+			'service_id'   => isset($_POST['service_id']) ? intval($_POST['service_id']) : null,
+			'status'       => isset($_POST['status']) ? sanitize_text_field($_POST['status']) : '',
+			'notes'        => isset($_POST['notes']) ? sanitize_textarea_field($_POST['notes']) : '',
 		);
 
-// For debugging issues
-		if ($result === false) {
-			error_log('Booking update failed. Error: ' . $wpdb->last_error);
+		// Ensure required fields are validated
+		if (empty($booking_data['booking_date'])) {
+			wp_send_json_error('The "date" field is required.');
+		}
+		if (empty($booking_data['booking_time'])) {
+			wp_send_json_error('The "time" field is required.');
+		}
+		if (empty($booking_data['customer_id'])) {
+			wp_send_json_error('The "customer_id" field is required.');
+		}
+		if (empty($booking_data['service_id'])) {
+			wp_send_json_error('The "service_id" field is required.');
 		}
 
-		return $result;
+		// Call `update_booking` as a static or instance method (adjust if static or not)
+		$appointment_instance = new Booking_Appointment();
+		$result = $appointment_instance->update_booking($booking_id, $booking_data);
+
+		// Handle update failure
+		if (!$result) {
+			wp_send_json_error('Failed to update booking.');
+		}
+
+		// Respond with success
+		wp_send_json_success(array(
+			'message' => 'Booking updated successfully.',
+			'data'    => $booking_data,
+		));
 	}
 
 	/**

@@ -524,12 +524,26 @@ class Booking_Admin {
 		}
 
 		$booking_data = array(
-			'booking_date' => sanitize_text_field($_POST['date']),
-			'booking_time' => sanitize_text_field($_POST['time']),
-			'customer_id'  => intval($_POST['customer_id']),
-			'service_id'   => intval($_POST['service_id']),
-			'status'       => sanitize_text_field($_POST['status']),
+			'booking_date' => isset($_POST['date']) ? sanitize_text_field($_POST['date']) : null,
+			'booking_time' => isset($_POST['time']) ? sanitize_text_field($_POST['time']) : null,
+			'customer_id'  => isset($_POST['customer_id']) ? intval($_POST['customer_id']) : null,
+			'service_id'   => isset($_POST['service_id']) ? intval($_POST['service_id']) : null,
+			'status'       => isset($_POST['status']) ? sanitize_text_field($_POST['status']) : null,
 		);
+
+// Ensure required fields are validated before proceeding
+		if (empty($booking_data['booking_date'])) {
+			wp_send_json_error('The "date" field is required.');
+		}
+		if (empty($booking_data['booking_time'])) {
+			wp_send_json_error('The "time" field is required.');
+		}
+		if (empty($booking_data['customer_id'])) {
+			wp_send_json_error('The "customer_id" field is required.');
+		}
+		if (empty($booking_data['service_id'])) {
+			wp_send_json_error('The "service_id" field is required.');
+		}
 
 		// Update the booking in the database using the Booking_Appointment class.
 		$result = Booking_Appointment::update_booking($booking_id, $booking_data);
